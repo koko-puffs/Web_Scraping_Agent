@@ -2,13 +2,18 @@
 
 ## Setup
 
+Start the virtual environment.
+```bash
+.\.venv\Scripts\Activate.ps1
+```
+
 Install the Python dependencies.
 
 ```bash
 pip install -r requirements.txt
-```
-If you run into issues with the dependency installation in regards to the git cloning, then run this instead:
-```bash
+
+## If you run into issues with the dependency installation in regards to the git cloning, then run this instead:
+
 $env:GIT_CLONE_PROTECTION_ACTIVE="false"; pip install -r requirements.txt
 ```
 

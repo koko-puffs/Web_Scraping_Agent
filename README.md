@@ -7,7 +7,7 @@ Start the virtual environment.
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install the Python dependencies.
+Make sure the Python dependencies are installed.
 
 ```bash
 pip install -r requirements.txt

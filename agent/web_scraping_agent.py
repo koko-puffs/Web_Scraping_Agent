@@ -20,12 +20,12 @@ web_content_tool_schema = {
     },
 }
 
-def create_web_scraping_agent() -> autogen.ConversableAgent:
+def create_web_scraping_agent() -> autogen.AssistantAgent:
     current_llm_config = LLM_CONFIG.copy()
     current_llm_config["tools"] = [web_content_tool_schema]
     
-    agent = autogen.ConversableAgent(
-        name="Generic Web Information Agent",
+    agent = autogen.AssistantAgent(
+        name="Web Scraping Agent",
         system_message="You are an AI assistant that answers questions based on the content of a webpage. "
                        "The user will provide a URL and a question or task related to that URL. "
                        "Your first step is to use the 'get_text_from_url' tool to fetch the text content of the page. "
